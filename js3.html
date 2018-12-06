@@ -1,20 +1,77 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-  <title>Задача 2.27</title>
-  <link href="style.css" rel="stylesheet">
+  <title>задача 2.27</title>
+  <style>
+    BODY {
+
+  align-items: center;
+  justify-content: center;
+  background: white;
+  font-family: Georgia;
+  }
+H1 {
+  font-size: 30px;
+  font-weight: normal;
+  cursor: pointer;
+  text-shadow: 0 0 15px #999;
+  color: transparent;
+  transition: all .5s;
+  }
+  H1:hover {
+    text-shadow: 0 0 0px #333;
+    cursor: pointer;
+    }
+  </style>
 </head>
 <body>
 <nav role="navigation">
 <ul>
-  <li><a href="index.html">Главная</a></li>
-  <li><a href="#">Информатика</a>
-    <ul>
-      <li><a href="css.html">CSS</a></li>
-      <li><a href="js.html">JS</a></li>
-    </ul>
-  </li>
-  <li><a href="page1.html">Мой класс</a></li>
-  <li><a href="fruits.html">Овощи</a></li>
-</ul>
-</nav>
+<html>
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=windows-1251">
+<title>Стили</title>
+</head>
+<script>
+function func(){
+n=document.getElementById("a_znach").value;
+y=n
+x=n%10
+a=(n-x)/10
+n=100*x+a
+document.getElementById("a").innerHTML ="<h1>"+"2.25= "+ n+"</h1>";
+x=(y-y%100)/100
+a=y%100
+n=10*a+x
+document.getElementById("b").innerHTML ="<h1>"+"2.27= "+ n+"</h1>";
+x=((y-y%100)/10+y%10)
+n=10*x+(y%100-y%10)/10
+document.getElementById("c").innerHTML ="<h1>"+"2.29= "+ n+"</h1>";
+x=((y-y%100)/10+y%10)
+n=(y%100-y%10)*10+x
+document.getElementById("d").innerHTML ="<h1>"+"2.31= "+ n+"</h1>";
+x=y%10
+a=(y%100-x)+(y-y%100)/100
+n=100*x+a
+document.getElementById("e").innerHTML ="<h1>"+"2.33= "+ n+"</h1>";
+}
+</script>
+_________________________________________
+<br>
+
+<br>
+n=<input type="text" value="0" id="a_znach">
+<br>
+<br>
+<button onclick="func()">Надо нажать</button>
+<br>
+<br>
+<div id="a"></div>
+<div id="b"></div>
+<div id="c"></div>
+<div id="d"></div>
+<div id="e"></div>
+
+</body>
+</html>
