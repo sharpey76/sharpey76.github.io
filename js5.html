@@ -1,0 +1,160 @@
+
+<!doctype html>
+<html>
+	<head>
+		<title>3.32</title>
+        <meta charset='utf-8' />
+		<style>
+		a.button.purple 
+    
+a.button.purple:hover 
+    
+a.button.purple:active
+</style>
+        		<script>
+function clean(){
+var canvas = document.getElementById('example');
+var ctx = canvas.getContext('2d');
+ctx.fillStyle = "white";
+ctx.fillRect(0, 0, 640, 480);
+
+}
+
+		function er1(){
+var canvas = document.getElementById('example');
+var ctx = canvas.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(320, 0);
+ctx.lineTo(320, 480);
+ctx.moveTo(0, 240);
+ctx.lineTo(640, 240);
+
+ctx.moveTo(300, 230);
+ctx.lineTo(300, 0);
+ctx.moveTo(300, 230);
+ctx.lineTo(0, 230);
+ctx.stroke();
+ctx.rect(0, 0, 300, 230);
+ctx.fillStyle = 'grey';
+ctx.fill();
+
+}
+		function er2(){
+	var canvas = document.getElementById('example');
+var ctx = canvas.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(320, 0);
+ctx.lineTo(320, 480);
+ctx.moveTo(0, 240);
+ctx.lineTo(640, 240);
+ctx.stroke();
+ctx.rect(0, 225, 640, 35);
+ctx.fillStyle = 'yelow';
+ctx.fill();
+
+}
+		function er3(){
+	var canvas = document.getElementById('example');
+var ctx = canvas.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(320, 0);
+ctx.lineTo(320, 480);
+ctx.moveTo(0, 240);
+ctx.lineTo(640, 240);
+ctx.stroke();
+ctx.rect(330, 200, 10, 250);
+ctx.fillStyle = 'pink';
+ctx.fill();
+
+}
+		function er4(){
+	var canvas = document.getElementById('example');
+var ctx = canvas.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(320, 0);
+ctx.lineTo(320, 480);
+ctx.moveTo(0, 240);
+ctx.lineTo(640, 240);
+ctx.stroke();
+ctx.rect(330, 200, 200, 20);
+ctx.fillStyle = 'blue';
+ctx.fill();
+
+}
+    function er5(){
+	var canvas = document.getElementById('example');
+var ctx = canvas.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(320, 0);
+ctx.lineTo(320, 480);
+ctx.moveTo(0, 240);
+ctx.lineTo(640, 240);
+ctx.stroke();
+ctx.rect(330, 250, 300, 240);
+ctx.fillStyle = 'black';
+ctx.fill();
+}
+    function er6(){
+	var canvas = document.getElementById('example');
+var ctx = canvas.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(320, 0);
+ctx.lineTo(320, 480);
+ctx.moveTo(0, 240);
+ctx.lineTo(640, 240);
+ctx.stroke();
+ctx.rect(340, 0, 300, 230);
+ctx.fillStyle = 'green';
+ctx.fill();
+ctx.rect(340, 255, 300, 225);
+ctx.fillStyle = 'green';
+ctx.fill();
+}
+	  function er7(){
+	var canvas = document.getElementById('example');
+var ctx = canvas.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(320, 0);
+ctx.lineTo(320, 480);
+ctx.moveTo(0, 240);
+ctx.lineTo(640, 240);
+ctx.stroke();
+ctx.rect(330,250, 20, 10);
+ctx.fillStyle = 'orange';
+ctx.fill();
+
+}
+	  function er8(){
+	var canvas = document.getElementById('example');
+var ctx = canvas.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(320, 0);
+ctx.lineTo(320, 480);
+ctx.moveTo(0, 240);
+ctx.lineTo(640, 240);
+ctx.stroke();
+ctx.rect(0, 225, 640, 10);
+ctx.fillStyle = 'red';
+ctx.fill();
+ctx.rect(340, 0, 300,480);
+ctx.fillStyle = 'red';
+ctx.fill();
+}
+		</script>
+	</head>
+	<body>
+<a href="#" onclick="clean()" class="button purple">Очистить</a>
+<a href="#" onclick="er1()" class="button purple">3.31а</a>
+<a href="#" onclick="er2()" class="button purple">3.31б</a>
+<a href="#" onclick="er3()" class="button purple">3.31в</a>
+<a href="#" onclick="er4()" class="button purple">3.31г</a>
+<a href="#" onclick="er5()" class="button purple">3.31д</a>
+<a href="#" onclick="er6()" class="button purple">3.31е</a>
+<a href="#" onclick="er7()" class="button purple">3.31ж</a>
+<a href="#" onclick="er8()" class="button purple">3.31з</a>
+
+<br>
+	<canvas width='640' height='480' id='example'>Обновите браузер</canvas>
+	<br>
+	
+</html>
