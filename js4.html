@@ -6,12 +6,25 @@
         <meta charset='utf-8' />
 		<style>
 		a.button.purple 
+			{
+	{
+  display: inline-block;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+} 
+a.button8:hover { background: rgba(255,255,255,.2); }
+a.button8:active { background: white; }
+}
     
-a.button.purple:hover 
-    
-a.button.purple:active
 </style>
-        		<script>
+<script>
 function clean(){
 var canvas = document.getElementById('example');
 var ctx = canvas.getContext('2d');
@@ -20,7 +33,7 @@ ctx.fillRect(0, 0, 640, 480);
 
 }
 
-		function er1(){
+function er1(){
 var canvas = document.getElementById('example');
 var ctx = canvas.getContext('2d');
 ctx.beginPath();
