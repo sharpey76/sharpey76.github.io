@@ -46,6 +46,7 @@ function er1(){
 var canvas = document.getElementById('example');
 var ctx = canvas.getContext('2d');
 ctx.beginPath();
+drawpoint(); 
 ctx.moveTo(320, 0);
 ctx.lineTo(320, 480);
 ctx.moveTo(0, 240);
@@ -59,11 +60,21 @@ ctx.stroke();
 ctx.rect(0, 0, 300, 230);
 ctx.fillStyle = 'grey';
 ctx.fill();
+	
+x=Number(document.getElementById("x_znach").value); 
+y=Number(document.getElementById("y_znach").value); 
+if (x <= -2 && y>=1) {
+document.getElementById("otvet").innerHTML = "Точка в области";
+} else {
+document.getElementById("otvet").innerHTML = "Точка не в области"; 
 }
+}
+	
 		function er2(){
-	var canvas = document.getElementById('example');
+var canvas = document.getElementById('example');
 var ctx = canvas.getContext('2d');
 ctx.beginPath();
+drawpoint(); 
 ctx.moveTo(320, 0);
 ctx.lineTo(320, 480);
 ctx.moveTo(0, 240);
@@ -72,12 +83,21 @@ ctx.stroke();
 ctx.rect(0, 225, 640, 35);
 ctx.fillStyle = 'yelow';
 ctx.fill();
-
+			
+x=Number(document.getElementById("x_znach").value); 
+y=Number(document.getElementById("y_znach").value); 
+if (y <= 3/2 && y >= -2) {
+document.getElementById("otvet").innerHTML = "Точка в области";
+} else {
+document.getElementById("otvet").innerHTML = "Точка не в области"; 
 }
+}
+	
 		function er3(){
-	var canvas = document.getElementById('example');
+var canvas = document.getElementById('example');
 var ctx = canvas.getContext('2d');
 ctx.beginPath();
+drawpoint(); 			
 ctx.moveTo(320, 0);
 ctx.lineTo(320, 480);
 ctx.moveTo(0, 240);
@@ -86,12 +106,21 @@ ctx.stroke();
 ctx.rect(330, 200, 10, 250);
 ctx.fillStyle = 'pink';
 ctx.fill();
-
+			
+x=Number(document.getElementById("x_znach").value); 
+y=Number(document.getElementById("y_znach").value); 
+if (x >= 1 && x <= 2 && y <= 4) {
+document.getElementById("otvet").innerHTML = "Точка в области";
+} else {
+document.getElementById("otvet").innerHTML = "Точка не в области"; 
 }
+}
+	
 		function er4(){
-	var canvas = document.getElementById('example');
+var canvas = document.getElementById('example');
 var ctx = canvas.getContext('2d');
 ctx.beginPath();
+drawpoint(); 			
 ctx.moveTo(320, 0);
 ctx.lineTo(320, 480);
 ctx.moveTo(0, 240);
@@ -100,12 +129,21 @@ ctx.stroke();
 ctx.rect(330, 200, 200, 20);
 ctx.fillStyle = 'blue';
 ctx.fill();
-
+			
+x=Number(document.getElementById("x_znach").value); 
+y=Number(document.getElementById("y_znach").value); 
+if (x >= 1 && y <=4 && y >= 2) {
+document.getElementById("otvet").innerHTML = "Точка в области";
+} else {
+document.getElementById("otvet").innerHTML = "Точка не в области"; 
 }
+}
+	
     function er5(){
-	var canvas = document.getElementById('example');
+var canvas = document.getElementById('example');
 var ctx = canvas.getContext('2d');
 ctx.beginPath();
+drawpoint(); 	    
 ctx.moveTo(320, 0);
 ctx.lineTo(320, 480);
 ctx.moveTo(0, 240);
@@ -114,11 +152,21 @@ ctx.stroke();
 ctx.rect(330, 250, 300, 240);
 ctx.fillStyle = 'black';
 ctx.fill();
+	    
+x=Number(document.getElementById("x_znach").value); 
+y=Number(document.getElementById("y_znach").value); 
+if ((x >=2 && y >= 0) || (x >= 1 && y <= -1)) {
+document.getElementById("otvet").innerHTML = "Точка в области";
+} else {
+document.getElementById("otvet").innerHTML = "Точка не в области"; 
 }
+}
+	
     function er6(){
 	var canvas = document.getElementById('example');
 var ctx = canvas.getContext('2d');
 ctx.beginPath();
+drawpoint(); 	    
 ctx.moveTo(320, 0);
 ctx.lineTo(320, 480);
 ctx.moveTo(0, 240);
@@ -130,11 +178,20 @@ ctx.fill();
 ctx.rect(340, 255, 300, 225);
 ctx.fillStyle = 'green';
 ctx.fill();
+	    
+x=Number(document.getElementById("x_znach").value); 
+y=Number(document.getElementById("y_znach").value); 
+if ((x >= 2 && y >= 1) || (x >= 2 && y <= -3/2)) {
+document.getElementById("otvet").innerHTML = "Точка в области";
+} else {
+document.getElementById("otvet").innerHTML = "Точка не в области"; 
+}
 }
 	  function er7(){
-	var canvas = document.getElementById('example');
+var canvas = document.getElementById('example');
 var ctx = canvas.getContext('2d');
 ctx.beginPath();
+drawpoint(); 		  
 ctx.moveTo(320, 0);
 ctx.lineTo(320, 480);
 ctx.moveTo(0, 240);
@@ -143,12 +200,21 @@ ctx.stroke();
 ctx.rect(330,250, 20, 10);
 ctx.fillStyle = 'orange';
 ctx.fill();
-
+		  
+x=Number(document.getElementById("x_znach").value); 
+y=Number(document.getElementById("y_znach").value); 
+if (x >= 2 && x <= 3 && y >= -2 && y <= -1) {
+document.getElementById("otvet").innerHTML = "Точка в области";
+} else {
+document.getElementById("otvet").innerHTML = "Точка не в области"; 
 }
+}
+	
 	  function er8(){
-	var canvas = document.getElementById('example');
+var canvas = document.getElementById('example');
 var ctx = canvas.getContext('2d');
 ctx.beginPath();
+drawpoint(); 		  
 ctx.moveTo(320, 0);
 ctx.lineTo(320, 480);
 ctx.moveTo(0, 240);
@@ -160,10 +226,29 @@ ctx.fill();
 ctx.rect(340, 0, 300,480);
 ctx.fillStyle = 'red';
 ctx.fill();
+		  
+x=Number(document.getElementById("x_znach").value); 
+y=Number(document.getElementById("y_znach").value); 
+if ((y <= 3/2 && y >= 1/2 && x <= 2) || (x >= 2)) {
+document.getElementById("otvet").innerHTML = "Точка в области";
+} else {
+document.getElementById("otvet").innerHTML = "Точка не в области"; 
 }
-	function getRadians(degrees) { 
-return (Math.PI/180)*degrees; 
+}
+	
+function drawpoint() { 
+x=Number(document.getElementById("x_znach").value); 
+y=Number(document.getElementById("y_znach").value); 
+x=320+x*10; 
+y=240-y*10; 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+ctx.beginPath(); 
+ctx.strokeStyle = 'green'; 
+ctx.arc(x, y, 2, 0, 2 * Math.PI); 
+ctx.stroke(); 
 } 
+
 </script> 
 </head> 
 <body> 
