@@ -49,7 +49,7 @@ ctx.beginPath();
 ctx.moveTo(320, 0);
 ctx.lineTo(320, 480);
 ctx.moveTo(0, 240);
-ctx.lineTo(640, 240); // 320;240-центр
+ctx.lineTo(640, 240); 
 
 ctx.moveTo(300, 230);
 ctx.lineTo(300, 0);
@@ -59,30 +59,6 @@ ctx.stroke();
 ctx.rect(0, 0, 300, 230);
 ctx.fillStyle = 'grey';
 ctx.fill();
-	
-	var x = prompt('Введите координату x', '');
-	var x1 = x;
-if (x < -2) {
-  x1 = 1;
-} 
-else {
-  x1 = 0;
-}
-	var y = prompt('Введите координату y', '');
-	var y1 = y;
-if (y > 1) {
-  y1 = 1;
-} 
-else {
-  y1 = 0;
-}
-ctx.moveTo(x, y);
-<div class="square"></div>
-	var z = x1 + y1;
-if (z == 2) {
-
-}
-	
 }
 		function er2(){
 	var canvas = document.getElementById('example');
@@ -185,9 +161,14 @@ ctx.rect(340, 0, 300,480);
 ctx.fillStyle = 'red';
 ctx.fill();
 }
-		</script>
-	</head>
-	<body>
+	function getRadians(degrees) { 
+return (Math.PI/180)*degrees; 
+} 
+</script> 
+</head> 
+<body> 
+x=<input type="text" value="0" id="x_znach"> 
+y=<input type="text" value="0" id="y_znach"> 
 <a href="#" onclick="clean()" class="button purple">Очистить</a>
 <a href="#" onclick="er1()" class="button purple">3.31а</a>
 <a href="#" onclick="er2()" class="button purple">3.31б</a>
