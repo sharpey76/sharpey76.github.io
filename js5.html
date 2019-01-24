@@ -40,17 +40,25 @@ ctx.fillStyle = "white";
 ctx.fillRect(0, 0, 640, 480);
 }
 
-  
+ 
 function er1(){
 var canvas = document.getElementById('example');
-var ctx = canvas.getContext('2d');
+var ctx=canvas.getContext("2d");
 ctx.beginPath();
 drawpoint(); 
 ctx.moveTo(320, 0);
 ctx.lineTo(320, 480);
 ctx.moveTo(0, 240);
-ctx.lineTo(640, 240); 
+ctx.lineTo(640, 240);
+ctx.moveTo(80,-10);
+ctx.lineTo(640,550)
 ctx.stroke();
+for(var i=-20;i<20;i+=0.01){
+    ctx.fillStyle="blue"; // цвет квадратической параболы
+    ctx.fillRect(320+i*10,290-Math.pow(i,2),1,1);}
+for(var i=-20;i<20;i+=0.01){
+    ctx.fillStyle="blue"; // цвет квадратической параболы
+    ctx.fillRect(320+i*5,220+Math.pow(i,2),1,1);}
 	
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
